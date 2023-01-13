@@ -1,28 +1,70 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  width: 228px;
+  height: 32px;
+}
+.logo_place_header {
+  margin-left: 64px;
+  margin-top: 30px;
+  position: absolute;
+  z-index: 2;
+}
+.header__title {
+  max-width: 730px;
+  line-height:96px;
+  font-sixe: 102px;
+  font-weight: 600px;
+  z-index: 2;
+  margin-left: 64px;
+  color: #000
+}
+.header__subtitle {
+  position: absolute;
+  margin-bottom: 18px;
+  left: 64px;
+  max-width: 388px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+  z-index: 2;
+  color: #000;
+}
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+.main-illustration {
+  weidth: 765px;
+  height: 608px;
+  right: 0;
+  bottom:0;
+  position: absolute;
+  z-index: 2;
+}
 .header__square-pic {
   height: 568px;
   width: 568px;
+  top: 64px;
+  right: 0;
+  position: absolute;
+  background-color: #2f80ed;
 }
-
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
