@@ -11,14 +11,16 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
+  align-content: center;
   flex-wrap: wrap;
-  align-content: space-around;
 }
 .logo {
   width: 228px;
   height: 32px;
+  background-repeat: no-repeat;
 }
 .logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
   margin-left: 64px;
   margin-top: 30px;
   position: absolute;
@@ -52,9 +54,9 @@
 .header__main-illustration {
   width: 765px;
   height: 608px;
-  background: url(../../images/header-image.png);
-  background-size: cover;
   position: absolute;
+  background: url(../images/header-image.png);
+  background-size: cover;
   right: 0;
   bottom: 0;
   z-index: 1;
