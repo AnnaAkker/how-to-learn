@@ -109,6 +109,124 @@
 .two-columns__span-accent {
   font-weight: 600;
 }
+
+.techniques {
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  width: 240px;
+  margin-right: 100px;
+}
+
+.cards__item:nth-child(3) {
+  margin: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px 40px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  margin: 0 0 16px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+.video {
+  padding-top: 100px;
+}
+
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+}
+
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  margin-right: 20px;
+  border: none;
+}
+
+.video__iframe:last-child {
+  margin: 0;
+}
+
+.oakley {
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
+
+.feynman {
+  background: no-repeat left bottom url(../images/feynman.png), #f2f2f2;
+  background-size: 867px 637px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 890px;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+.feynman__title {
+  margin: 0 auto 70px auto;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+}
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+.feynman__link {
+  color: #2f80ed;
+  line-height: 51px;
+  font-weight: normal;
+  font-size: 36px;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  opacity: 1;
+  text-decoration: none;
+}
+.feynman__link:hover {
+  opacity: .5;
+}
+
 .digits {
   padding: 100px 0;
   text-align: center;
@@ -157,45 +275,81 @@
   font-weight: 400;
   margin-top: 20px;
 }
-.feynman {
-  background: no-repeat left bottom url(../images/feynman.png), #f2f2f2;
-  background-size: 867px 637px;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  position: relative;
-  min-height: 890px;
-  padding-top: 100px;
-  box-sizing: border-box;
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
 }
-.feynman__title {
-  margin: 0 auto 70px auto;
-  width: 648px;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-  text-align: center;
+
+.khan__conteiner {
+  width: 80%;
+  margin: 0 auto;
 }
-.feynman__subtitle {
-  line-height: 51px;
-  font-size: 36px;
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
   font-weight: normal;
   margin: 0;
 }
-.feynman__link {
-  color: #2f80ed;
-  line-height: 51px;
-  font-weight: normal;
-  font-size: 36px;
-  position: absolute;
-  right: 48px;
-  top: 50%;
-  opacity: 1;
-  text-decoration: none;
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
 }
-.feynman__link:hover {
+
+.khan__quote {
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 50px;
+  margin-bottom: 36px;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.khan__qoute-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 68px;
+}
+
+.khan__book-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  height: 100%;
+  margin-left: 48px;
+}
+
+.khan__buy-link:hover {
   opacity: .5;
 }
+
 .kaufman {
   background-color: #1f1f1f;
   padding: 90px 0;
@@ -238,6 +392,29 @@
   line-height: 1.2;
   width: normal;
 }
+
+.resources {
+  margin-top: 100px;
+  margin-bottom: 217px;
+}
+
+.resources__logo-zone{
+  width: 1100px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 80px auto 217px auto;
+}
+
+.resources__link {
+  display: block;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
