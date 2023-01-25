@@ -1,3 +1,16 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+} 
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -13,6 +26,7 @@
   position: relative;
   align-content: center;
   flex-wrap: wrap;
+  overflow: hidden
 }
 .logo {
   width: 228px;
@@ -50,6 +64,7 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition: .3s;
 }
 .header__link:hover {
   opacity: .5;
@@ -71,6 +86,7 @@
   position: absolute;
   background-color: #2f80ed;
 }
+
 .description {
   padding-top: 100px;
   display: flex;
@@ -222,6 +238,7 @@
   top: 50%;
   opacity: 1;
   text-decoration: none;
+  transition: .3s;
 }
 .feynman__link:hover {
   opacity: .5;
@@ -325,8 +342,7 @@
 }
 
 .khan__book-container {
-  width: 80%;
-  margin: 0 auto;
+  display: flex;
 }
 
 .khan__book-pic {
@@ -344,6 +360,7 @@
   color: #2f80ed;
   height: 100%;
   margin-left: 48px;
+  transition: .3s;
 }
 
 .khan__buy-link:hover {
@@ -361,7 +378,7 @@
   background: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
-  background-size: 877px 877px;
+  background-size: cover;
   position: absolute;
   top: 0px;
   right: -210px;
@@ -408,6 +425,11 @@
 
 .resources__link {
   display: block;
+  transition: .3s;
+}
+
+.resources__link:hover {
+  opacity: .5;
 }
 
 .resources__logo {
@@ -469,6 +491,7 @@
   font-weight: normal;
   display: flex;
   align-items: center;
+  transition: .3s;
 }
 .footer__column-link:hover {
   opacity: .5;
